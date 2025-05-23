@@ -16,7 +16,10 @@ class redirectAdmin
      */
     public function handle(Request $request, Closure $next, $guard = null): Response
     {
-        if (Auth::guard($guard)->check() && Auth::user()->is_admin ==1) {
+        if (Auth::guard($guard)->check() &&
+            Auth::user()->is_admin ==1 &&
+            !$request->routeIs('admin.logout')
+            ) {
             return redirect()->route('admin.dashboard');
         }
         return $next($request);
