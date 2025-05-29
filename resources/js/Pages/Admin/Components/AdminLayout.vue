@@ -1,16 +1,16 @@
 <template>
     <div class="antialiased bg-gray-50 dark:bg-gray-900">
         <!-- navbar start-->
-            <Navbar></Navbar> 
+        <Navbar></Navbar>
         <!-- navbar end-->
-        
+
         <!-- Sidebar start-->
-            <Sidebar></Sidebar>
+        <Sidebar></Sidebar>
         <!-- Sidebar end-->
 
-       <slot>
-
-       </slot>
+        <main class="p-4 md:ml-64 h-auto pt-20 min-h-screen">
+            <slot/>
+        </main>
     </div>
 </template>
 
