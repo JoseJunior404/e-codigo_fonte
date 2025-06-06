@@ -58,7 +58,7 @@ import { Link } from '@inertiajs/vue3';
                     </button>
                     <ul id="dropdown-pages" class="hidden py-2 space-y-2">
                         <li>
-                            <Link :href="route('admin.products.dashboard')"
+                            <Link :href="route('admin.products.index')"
                                 class="flex items-center p-2 pl-11 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
                             Produtos</Link>
                         </li>
